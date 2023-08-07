@@ -39,7 +39,7 @@ function s($html) : string {
 
 // Función que revisa que el usuario este autenticado
 function isAuth() : void {
-    $url = $_SERVER['REQUEST_URI'];
+    $url = strtok($_SERVER['REQUEST_URI'], '?') ?? '/';
     $encontrado = false;
     if(!isset($_SESSION['login'])) {
         header('Location: /');

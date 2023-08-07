@@ -426,7 +426,7 @@ class DashboardController {
                 $profesor->guardar();
                
            //     $estudiante->crearPDF($estudiante->id);
-                // Redireccionarhttp://localhost:3000/dashboard-teacher-edit?
+                // Redireccionar/dashboard-teacher-edit?
                 header('Location: /dashboard-teacher-edit?code=1&id='.$id);
             }
         } 

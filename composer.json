@@ -16,7 +16,8 @@
         "endroid/qr-code": "^4.8",
         "setasign/fpdf": "1.8.*",
         "setasign/fpdi": "^2.3",
-        "net-tools/js-qr-scanner": "^1.4"
+        "net-tools/js-qr-scanner": "^1.4",
+        "vlucas/phpdotenv": "^5.5"
         
      
         

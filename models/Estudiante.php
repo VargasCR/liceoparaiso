@@ -276,7 +276,7 @@ class Estudiante extends ActiveRecord {
             // Guardar el PDF en un archivo
             $rutaPDF = CARNET_PDF_FOLDER.$filename.'.pdf';
             $pdf->Output($rutaPDF, 'F');
-            $url = 'http://localhost:3000/build/img/carnet/pdf/'.$filename.'.pdf';
+            $url = $_ENV['APP_URL']."/build/img/carnet/pdf/".$filename.'.pdf';
             return $url;
     }
        
@@ -330,7 +330,7 @@ class Estudiante extends ActiveRecord {
             // Guardar el PDF en un archivo
             $rutaPDF = REPORT_BASE_FOLDER.$filename.'.pdf';
             $pdf->Output($rutaPDF, 'F');
-            $url = 'http://localhost:3000/build/report/'.$filename.'.pdf';
+            $url = $_ENV['APP_URL'].'/build/report/'.$filename.'.pdf';
             return $url;
         
         // Esperar 5 segundos
