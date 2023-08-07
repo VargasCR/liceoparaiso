@@ -1,0 +1,24 @@
+{
+    "name": "juandelatorre/up-task_mvc",
+    "description": "Proyecto UpTask MVC, PHP 8, SASS",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "MVC\\" : "./",
+            "Controllers\\" : "./controllers",
+            "Model\\" : "./models", 
+            "Classes\\" : "./classes"
+        }
+    },
+    "require": {
+        "phpmailer/phpmailer": "^6.5",
+        "intervention/image": "^2.7",
+        "endroid/qr-code": "^4.8",
+        "setasign/fpdf": "1.8.*",
+        "setasign/fpdi": "^2.3",
+        "net-tools/js-qr-scanner": "^1.4"
+        
+     
+        
+    }
+}
